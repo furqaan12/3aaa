@@ -90,7 +90,7 @@ graph TD
 | AI Processing | OpenAI GPT-4 API | ~$0.03 per 1k tokens |
 | Zapier Integration | Existing Plan | No additional cost |
 
-### Base Implementation Cost: $1,000
+### Base Implementation Cost: $1,100
 Includes:
 - QuillForms setup and customization
 - Whisper and GPT-4 integration
