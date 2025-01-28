@@ -62,29 +62,31 @@ graph TD
 ```
 
 
-graph LR
-    Landing[User Visits Landing Page] --> Collections[Collections Page]
-    
-    Collections --> Prayers[Borrowed Prayers]
-    Collections --> Psalms[Psalms]
-    Collections --> Advent[Advent Collections]
-    Collections --> Blessings[Blessings]
-    
-    Prayers --> AudioPlayer[Audio Player with Transcript]
-    Psalms --> AudioPlayer
-    
-    Advent --> Collection[Peace, Compassion, Love, Hope]
-    Collection --> Purchase[Buy for Myself]
-    Collection --> Gift[Buy as a Gift]
-    Collection --> Redeem[I Was Gifted This]
-    Collection --> Bundle[Buy the Advent Bundle]
-    
-    Blessings --> Buy[Buy Blessings]
-    
-    Landing --> Settings[Settings Page]
-    Settings --> Account[Account, About, Logout]
-    Account --> Restore[Restore Purchases]
-    Account --> Delete[Delete Account]
+# Quiet Collection App Flow
+
+## **Flow Overview**
+
+```mermaid
+graph TD;
+    A[Landing Page] -->|Click "Explore the Collections"| B[Collections Page];
+    B --> C[Advent Collections]
+    B --> D[Blessings]
+    B --> E[Borrowed Prayers]
+    C -->|Select Collection| F[View Sample & Purchase Options]
+    F -->|Buy for Myself| G[Payment Processing]
+    F -->|Buy as a Gift| H[Gift Selection]
+    F -->|I Was Gifted This| I[Redeem Gift]
+    F -->|Buy the Advent Bundle| J[Payment Processing]
+    D -->|Select Blessing| K[Purchase Option]
+    E -->|Select Prayer| L[Audio Player & Transcript]
+    L -->|Play Audio| M[Playback Controls]
+    M -->|Phone Locked| N[No Pause/Skip Available]
+    B --> O[Settings]
+    O --> P[Account]
+    O --> Q[About]
+    O --> R[Logout]
+```
+
 
 ## User Flow
 
