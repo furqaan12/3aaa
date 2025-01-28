@@ -61,6 +61,31 @@ graph TD
     O -->|No| Q[Completion Notification Sent]
 ```
 
+
+graph LR
+    Landing[User Visits Landing Page] --> Collections[Collections Page]
+    
+    Collections --> Prayers[Borrowed Prayers]
+    Collections --> Psalms[Psalms]
+    Collections --> Advent[Advent Collections]
+    Collections --> Blessings[Blessings]
+    
+    Prayers --> AudioPlayer[Audio Player with Transcript]
+    Psalms --> AudioPlayer
+    
+    Advent --> Collection[Peace, Compassion, Love, Hope]
+    Collection --> Purchase[Buy for Myself]
+    Collection --> Gift[Buy as a Gift]
+    Collection --> Redeem[I Was Gifted This]
+    Collection --> Bundle[Buy the Advent Bundle]
+    
+    Blessings --> Buy[Buy Blessings]
+    
+    Landing --> Settings[Settings Page]
+    Settings --> Account[Account, About, Logout]
+    Account --> Restore[Restore Purchases]
+    Account --> Delete[Delete Account]
+
 ## User Flow
 
 1. **Email Entry**
